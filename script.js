@@ -18,7 +18,7 @@ var gameOver = setInterval(function(){
     var blockPos = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
 
     if (blockPos < 40 && blockPos > 0 && charPos > 95){
-        alert("Game Over");
+        alert("Game Over\nTotal Score: " + Math.floor(score/130));
         block.style.animation = "none";
         block.style.display = "none";
         location.reload()
