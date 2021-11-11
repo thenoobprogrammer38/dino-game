@@ -1,0 +1,55 @@
+.container {
+    border: 1px solid black;
+    width: 600px;
+    height: 200px;
+    position: relative;
+    font-family: sans-serif;
+}
+
+#character {
+    height: 75px;
+    width: 30px;
+    position: relative;
+    background: red;
+    top: 125px;
+    left: 10px;
+}
+
+.callback {
+    animation: jump 600ms linear;
+}
+
+#block {
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    position: relative;
+    left: 570px;
+    top: 95px;
+    animation: slide 1300ms infinite linear;
+}
+
+#score{
+    position: relative;
+    top: -120px;
+    left: 510px;
+}
+
+.author{
+    opacity: 50%;
+    font-style: italic;
+    position: absolute;
+    top: 195px;
+    left: 500px;
+}
+
+@keyframes jump {
+    0% {top: 125px;}
+    30% {top: 80px;}
+    70% {top: 80px;}
+}
+
+@keyframes slide {
+    0% {left: 570px;}
+    100% {left: 0px;}
+}
