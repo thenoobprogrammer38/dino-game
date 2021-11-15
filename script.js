@@ -3,6 +3,8 @@ var block = document.getElementById("block");
 var scoreBoard = document.getElementById("score");
 var score = 0;
 
+alert("Dino Game\n\nTry to avoid the block of obstacles in your poathway. This is an easy peezy game! If u score below 50, ur such a nooob!")
+
 function jump() {
     console.log("jump");
     if (character.classList != "callback") {
