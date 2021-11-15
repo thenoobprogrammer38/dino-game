@@ -21,7 +21,7 @@ var gameOver = setInterval(function(){
         alert("Game Over\nTotal Score: " + Math.floor(score/130));
         block.style.animation = "none";
         block.style.display = "none";
-        location.reload()
+        location.reload();
     } else{
         score++;
     }
