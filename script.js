@@ -16,6 +16,13 @@ function jump() {
     }, 600);
 }
 
+//add event listener
+document.addEventListener("keydown", function(){
+    if (event.keyCode == 38 || event.keyCode == 32){
+        jump();
+    }
+})
+
 var gameOver = setInterval(function(){
     var charPos = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockPos = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
